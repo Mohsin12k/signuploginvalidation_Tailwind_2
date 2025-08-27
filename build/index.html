@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/Login Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../build/img/icon.jpg" type="image/x-icon">
+    <script defer src="main.js"></script>
+    <script defer src="https://kit.fontawesome.com/36314ca1f4.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-[url('../img/deer.webp')] bg-no-repeat bg-center bg-cover min-h-screen overflow-auto">
+
+    <header class="group/h1 group/nav group/navp backdrop-blur-[12px] header_py transition-all duration-300 ease-in-out focus:shadow-[0px_0px_20px_5px_#4ade80] hover:shadow-[0px_0px_20px_5px_#4ade80] outline-none fixed top-0 left-0 w-full z-20 block max-sm:hidden">
+
+        <div class="flex-grow min-w-[0] flex justify-between items-center">
+
+        <h1 class="header_h1_text text-white font-bold uppercase tracking-wider px-3 select-none transform transition-all duration-200 ease-in-out group-focus/h1:px-6 group-focus/h1:scale-105 group-hover/h1:px-6 group-hover/h1:scale-105 group-focus/h1:text_shadow group-hover/h1:text_shadow outline-none headerSignup">SignUp</h1>
+
+        <nav class="min_width flex justify-between items-center header_py px-3">
+
+            <p class="text-white font-semibold tracking-wider uppercase font_size_clamp py-2 select-none group-focus/navp:text_shadow group-hover/navp:text_shadow relative after:absolute after:block after:content-['>>>>>>'] after:w-full after:h-[3px] after:bg-white after:rounded-xl after:transform after:transition-all after:duration-200 after:ease-in-out after:scale-0 after:origin-left after:group-focus/navp:scale-100 after:group-hover/navp:scale-100 after:group-focus/navp:shadow-[0px_0px_20px_5px_#4ade80] after:group-hover/navp:shadow-[0px_0px_20px_5px_#4ade80] shuffleText">SignUp</p>
+
+            <button class="closeBtn text-white button_width button_padding button_text_size transform transition-all duration-200 ease-in-out group-focus/nav:-translate-x-2 group-focus/nav:scale-105 group-hover/nav:-translate-x-2 group-hover/nav:scale-105 focus:text_shadow hover:text_shadow relative after:absolute after:block after:w-full after:h-[3px] after:rounded-xl after:bg-white after:transform after:rotate-45 after:focus:shadow-[0px_0px_20px_5px_#4ade80] after:hover:shadow-[0px_0px_20px_5px_#4ade80] before:absolute before:block before:w-full before:h-[3px] before:rounded-xl before:bg-white before:transform before:-rotate-45 before:focus:shadow-[0px_0px_20px_5px_#4ade80] before:hover:shadow-[0px_0px_20px_5px_#4ade80] after:focus:animate-rotate-after after:hover:animate-rotate-after before:focus:animate-rotate-before before:hover:animate-rotate-before after:close before:close outline-none">
+
+                <i class="fa-solid fa-right-to-bracket focus:scale-110 hover:scale-110 outline-none"></i>
+
+            </button>
+        </nav>
+        </div>
+    </header>
+
+   <main class="w-full h-screen flex justify-center items-center flex-col">
+
+    <section class="main_width main_height rounded-xl backdrop-blur-[12px] flex justify-center items-center transition-all duration-300 ease-in-out focus:shadow-[0px_0px_20px_5px_#4ade80] hover:shadow-[0px_0px_20px_5px_#4ade80] focus:border focus:border-slate-50 hover:border hover:border-slate-50 overflow-hidden p-2 showHideLoginSign transHide max-sm:scale-100 max-sm:main_second_height">
+
+        <!-- signup Section -->
+
+       <section class="w-full h-full flex justify-center items-center flex-col signUpSection">
+
+        <h2 class="main_singup_text text-white tracking-wider font-bold p-1 uppercase absolute top-0 h2Align">SignUp</h2>
+
+        <section class="w-full h-full flex justify-center items-center flex-col">
+            
+            <form class="w-full flex justify-center items-center flex-col gap-5">
+
+                <article class="w-full p-2 flex">
+                <label for="username" class="text-white form_textSize flex items-end">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <input type="text" id="username" placeholder="Username" class="flex-grow min-w-0 font-semibold text-[#333] tracking-wider px-2 outline-none h-10 placeholder:tracking-widest bg-transparent border-b border-slate-50 placeholder:text-[#000] focus:placeHolder hover:placeHolder overflow-hidden">
+                </article>
+
+                <article class="w-full p-2 flex">
+                <label for="email" class="text-white form_textSize flex items-end">
+                    <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input type="email" id="email" placeholder="Email" class="flex-grow min-w-0 font-semibold text-[#333] tracking-wider px-2 outline-none h-10 placeholder:tracking-widest bg-transparent border-b border-slate-50 placeholder:text-[#000] focus:placeHolder hover:placeHolder overflow-hidden ">
+                </article>
+
+                <article class="w-full p-2 flex">
+                <label for="password" class="text-white form_textSize flex items-end">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <input type="password" id="password" placeholder="Password" class="flex-grow min-w-0 font-semibold text-[#333] tracking-wider px-2 outline-none h-10 placeholder:tracking-widest bg-transparent border-b border-slate-50 placeholder:text-[#000] focus:placeHolder hover:placeHolder overflow-hidden ">
+                </article>
+
+                <article class="w-full p-2 flex">
+                <label for="rep-password" class="text-white form_textSize flex items-end">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <input type="password" id="rep-password" placeholder="rep-password" class="flex-grow min-w-0 font-semibold text-[#333] tracking-wider px-2 outline-none h-10 placeholder:tracking-widest bg-transparent border-b border-slate-50 placeholder:text-[#000] focus:placeHolder hover:placeHolder overflow-hidden ">
+                </article>
+
+                <button 
+                type="submit"
+                class="text-white font-bold tracking-wider button_width_padding uppercase rounded-2xl bg-black/80 transition-all duration-200 ease-in-out focus:text-[1.50rem] hover:text-[1.50rem] focus:shadow-[0px_0px_20px_5px_#000] hover:shadow-[0px_0px_20px_5px_#000] cursor-pointer signupButton"
+                >Submit</button>
+
+                 </form>
+                
+           
+            <p
+                class="text-white tracking-wider font-semibold p_clamp"
+            >Already have an Account?</p><span class="no-underline p_clamp text-white font-bold relative after:absolute after:block after:w-full after:h-[3px] after:bg-white rounded-xl after:transition-all after:duration-300 after:ease-in-out after:transform after:scale-0 focus:after:scale-100 hover:after:scale-100 focus:after:shadow-[0px_0px_20px_5px_#4ade80] hover:after:shadow-[0px_0px_20px_5px_#4ade80] cursor-pointer goToLogin">Login</span>
+        </section>
+
+       </section>
+
+       <!-- Login Section -->
+
+       <section class="w-full h-full justify-center items-center flex-col hide loginSection h2Align" id="login">
+
+        <section class="w-full h-full flex justify-center items-center flex-col">
+
+            <h2 class="main_singup_text text-white tracking-wider font-bold p-1 uppercase absolute top-0">Login</h2>
+            
+            <form class="w-full flex justify-center items-center flex-col gap-8 form">
+
+                <article class="w-full p-2 flex">
+                <label for="email_lg" class="text-white form_textSize flex items-end">
+                    <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input type="email" id="email_lg" placeholder="Email" class="flex-grow min-w-0 font-semibold text-[#333] tracking-wider px-2 outline-none h-10 placeholder:tracking-widest bg-transparent border-b border-slate-50 placeholder:text-[#000] focus:placeHolder hover:placeHolder overflow-hidden ">
+                </article>
+
+                <article class="w-full p-2 flex">
+                <label for="password_lg" class="text-white form_textSize flex items-end">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <input type="password" id="password_lg" placeholder="Password" class="flex-grow min-w-0 font-semibold text-[#333] tracking-wider px-2 outline-none h-10 placeholder:tracking-widest bg-transparent border-b border-slate-50 placeholder:text-[#000] focus:placeHolder hover:placeHolder overflow-hidden ">
+                </article>
+
+                <button 
+                type="submit"
+                class="text-white font-bold tracking-wider button_width_padding uppercase rounded-2xl bg-black/80 transition-all duration-200 ease-in-out focus:text-[1.50rem] hover:text-[1.50rem] focus:shadow-[0px_0px_20px_5px_#000] hover:shadow-[0px_0px_20px_5px_#000] cursor-pointer loginButton"
+                >Login</button>
+
+            </form>
+
+             <p
+                class="text-white tracking-wider font-semibold p_clamp"
+            >Don't have an Account?</p><span class="no-underline p_clamp text-white font-bold relative after:absolute after:block after:w-full after:h-[3px] after:bg-white rounded-xl after:transition-all after:duration-300 after:ease-in-out after:transform after:scale-0 focus:after:scale-100 hover:after:scale-100 focus:after:shadow-[0px_0px_20px_5px_#4ade80] hover:after:shadow-[0px_0px_20px_5px_#4ade80] cursor-pointer py-4 goToSignUp">SignUp</span>
+            
+        </section>
+
+       </section>
+
+    </section>
+
+
+   </main>
+
+    <footer class="w-full footer_py backdrop-blur-[12px] fixed bottom-0 z-20">
+        
+        <p class="footer_p_text text-white font-bold tracking-wider py-1 px-2 text-center">
+            Copyright &copy;copy <span class="footer_date"></span>
+        </p>
+       
+    </footer>
+    
+</body>
+</html>
